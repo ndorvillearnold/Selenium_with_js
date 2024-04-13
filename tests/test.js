@@ -10,7 +10,7 @@ async function test_case() {
     await driver.get("https://github.com");
 
     // (grab an element from the page) Type "Hello World" into the search input field and press Enter
-    await driver.findElement(By.xpath("q")).sendKeys("Hello World", Key.RETURN);
+    await driver.findElement(By.partialLinkText("Sign in")).click();
 
     // Wait for 10 seconds and then quit the driver
     //     setTimeout(async function () {
